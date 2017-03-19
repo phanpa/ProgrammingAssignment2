@@ -53,8 +53,8 @@ cacheSolve <- function(x, ...) {
         		}
         
         		#otherwise, calculates the inverse 
-        		mat.data = x$get()
-        		inv = solve(mat.data, ...)
+        		dataset = x$get()
+        		inv = solve(dataset, ...)
         
         		#sets the value of the inverse in the cache using the setinv function.
         		x$setinv(inv)
